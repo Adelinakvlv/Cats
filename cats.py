@@ -5,7 +5,7 @@ from PIL import Image, ImageTk
 import requests
 from io import BytesIO
 
-def load_image():
+def load_image(url):
     try:
         response=requests.get(url)
         response.raise_for_status()
